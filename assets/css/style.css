@@ -1,4 +1,4 @@
-/*# =============== GOOGLE FONTS ===============*/
+/*/*=============== GOOGLE FONTS ===============*/
 
 @font-face {
   font-family: "Open Sans";
@@ -13,18 +13,18 @@
     url(../fonts/Raleway-Bold.ttf);
 }
 
-/*# =============== VARIABLES CSS ===============*/
+/*/*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3rem;
 
-  /*# Social Media icons colors */
+  /*/*Social Media icons colors */
 
   --color-whatsapp: #00bd2c;
   --color-twitter: #1da1f2;
   --color-instagram: #833ab4;
   --color-linkedin: #0a66c2;
 
-  /*# Base colors */
+  /*/*Base colors */
 
   --color-main: #ff4c00;
   --color-base: rgb(29, 55, 68);
@@ -33,13 +33,13 @@
   --color-light: rgb(30, 82, 113);
   --color-green: #08f1af;
 
-  /*# ========== Colors ==========*/
-  /*# Change favorite color to match images */
-  /*# Green dark 190 - Green 171 - Green Blue 200*/
+  /*/*========== Colors ==========*/
+  /*/*Change favorite color to match images */
+  /*/*Green dark 190 - Green 171 - Green Blue 200*/
   /* --hue-color: 163; */
   --hue-color: 200;
 
-  /*# HSL color mode */
+  /*/*HSL color mode */
 
   --first-color: hsl(var(--hue-color), 100%, 25%);
   --first-color-second: hsl(var(--hue-color), 100%, 25%);
@@ -61,7 +61,7 @@
   );
   --box-shadow-slider: -1rem 0 1.5rem #e3e3e3;
 
-  /*# ========== Font and typography ==========*/
+  /*/*========== Font and typography ==========*/
 
   /* --body-font: "Open Sans Condensed", sans-serif; */
   --body-font: "Open Sans", sans-serif;
@@ -76,12 +76,12 @@
   --smaller-font-size: 0.75rem;
   --minimal-font-size: 0.65rem;
 
-  /*# ========== Font weight ==========*/
+  /*/*========== Font weight ==========*/
   --font-regular: 300;
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*# ========== Margenes Bottom ==========*/
+  /*/*========== Margenes Bottom ==========*/
   --mb-0-25: 0.25rem;
   --mb-0-5: 0.5rem;
   --mb-0-75: 0.75rem;
@@ -92,12 +92,12 @@
   --mb-2-5: 2.5rem;
   --mt-2-5: 2.5rem;
 
-  /*# ========== z index ==========*/
+  /*/*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-home: 1000;
 
-  /*# ========== Hover overlay ==========*/
+  /*/*========== Hover overlay ==========*/
   --img-transition: 0.3s;
   --img-hidden: hidden;
   --img-scale: scale(1.1);
@@ -115,7 +115,7 @@
   }
 }
 
-/*# ========== Variables Dark theme ==========*/
+/*/*========== Variables Dark theme ==========*/
 body.dark-theme {
   --first-color-second: hsl(var(--hue-color), 54%, 12%);
   --title-color: hsl(var(--hue-color), 24%, 95%);
@@ -133,7 +133,7 @@ body.dark-theme {
   --box-shadow-slider: none;
 }
 
-/*# ========== Button Dark/Light ==========*/
+/*/*========== Button Dark/Light ==========*/
 .nav__dark {
   display: flex;
   align-items: center;
@@ -157,7 +157,7 @@ body.dark-theme {
   font-size: var(--small-font-size);
 }
 
-/*# =============== BASE ===============*/
+/*/*=============== BASE ===============*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -214,7 +214,7 @@ input {
   outline: none;
 }
 
-/*# use by Scrollreveals function */
+/*/*use by Scrollreveals function */
 .main {
   overflow-x: hidden;
 }
@@ -223,7 +223,7 @@ input {
   color: var(--white-color);
 }
 
-/*# =============== REUSABLE CSS CLASSES ===============*/
+/*/*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 4.5rem 0 2.5rem;
 }
@@ -247,19 +247,19 @@ input {
   gap: 1.5rem;
 }
 
-/*# =============== HEADER ===============*/
+/*/*=============== HEADER ===============*/
 .header {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  /*# Temporal, solo para codificar bien el header, luego se sustituye por "transparent" */
+  /*/*Temporal, solo para codificar bien el header, luego se sustituye por "transparent" */
   /* background-color: var(--first-color); */
   background-color: transparent;
 }
 
-/*# =============== NAV ===============*/
+/*/*=============== NAV ===============*/
 .nav {
   height: var(--header-height);
   display: flex;
@@ -291,16 +291,16 @@ input {
   display: none;
 }
 
-/*# Smartphones styles: Codificación Menu de navegación  */
+/*/*Smartphones styles: Codificación Menu de navegación  */
 
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
     background-color: var(--body-color);
     top: 0;
-    /*# Temporal, solo visualizamos el menu al inicio de la programación */
+    /*/*Temporal, solo visualizamos el menu al inicio de la programación */
     /* right: 0; */
-    /*# Desaparecemos el menu y lo manipulamos con una App JS y la clase "show-menu" codificada más abajo */
+    /*/*Desaparecemos el menu y lo manipulamos con una App JS y la clase "show-menu" codificada más abajo */
     right: -100%;
     width: 70%;
     height: 100%;
@@ -337,13 +337,13 @@ input {
   cursor: pointer;
 }
 
-/*#  Show Menu */
+/*/* Show Menu */
 
 .show-menu {
   right: 0;
 }
 
-/*# Change background header */
+/*/*Change background header */
 
 .scroll-header {
   background-color: var(--body-color);
@@ -356,9 +356,9 @@ input {
   color: var(--first-color);
 }
 
-/*# Marca el navegador activo en un momento dado */
+/*/*Marca el navegador activo en un momento dado */
 
-/*# Active link */
+/*/*Active link */
 .active-link {
   position: relative;
   color: var(--title-color);
@@ -398,9 +398,9 @@ input {
   font-size: var(--small-font-size);
 } */
 
-/*# =============== HOME ===============*/
+/*/*=============== HOME ===============*/
 
-/*# ===== Home Banner background image ====*/
+/*/*===== Home Banner background image ====*/
 .home__img {
   position: absolute;
   top: 0;
@@ -411,7 +411,7 @@ input {
   object-position: 83%;
 }
 
-/*# ------ End Banner background image ----*/
+/*/*------ End Banner background image ----*/
 
 .home__container {
   position: relative;
@@ -462,7 +462,7 @@ input {
   width: max-content;
 }
 
-/*# ------ ¡New! Social Media icons ------ */
+/*/*------ ¡New! Social Media icons ------ */
 
 .home__social-link .fab.fa-twitter:hover {
   color: var(--color-twitter);
@@ -487,7 +487,7 @@ input {
   color: var(--color-whatsapp);
 }
 
-/*# ------ ¡end! Social Media icons ------ */
+/*/*------ ¡end! Social Media icons ------ */
 
 .home__info {
   background-color: transparent;
@@ -523,7 +523,7 @@ input {
   transform: var(--img-scale);
 }
 
-/*# =============== BUTTONS ===============*/
+/*/*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
   background-color: var(--first-color);
@@ -552,7 +552,7 @@ input {
   padding: 0.5rem;
 }
 
-/*# =============== ABOUT US part 1===============*/
+/*/*=============== ABOUT US part 1===============*/
 
 .about__data {
   text-align: center;
@@ -617,7 +617,7 @@ input {
   letter-spacing: 0.5px;
   border-radius: 3px;
 }
-/*# =============== services ===============*/
+/*/*=============== services ===============*/
 
 .services__card {
   position: relative;
@@ -625,7 +625,7 @@ input {
   overflow: var(--img-hidden);
 }
 
-/*# Se inserta el contenido o texto dentro de la Card  */
+/*/*Se inserta el contenido o texto dentro de la Card  */
 .services__data {
   position: absolute;
   bottom: 1.5rem;
@@ -642,7 +642,7 @@ input {
   margin-bottom: var(--mb-0-25);
 }
 
-/*#  Los span se convierten a Block para manipular su tamaño y margenes */
+/*/* Los span se convierten a Block para manipular su tamaño y margenes */
 .services__description {
   display: block;
   font-size: var(--smaller-font-size);
@@ -661,7 +661,7 @@ input {
   background-image: none;
 }
 
-/*# =============== EXPERIENCE ===============*/
+/*/*=============== EXPERIENCE ===============*/
 .experience__container {
   row-gap: 2.5rem;
   justify-content: center;
@@ -716,7 +716,7 @@ input {
   right: 0;
 }
 
-/*# start Clientes (cinta transportadora) */
+/*/*start Clientes (cinta transportadora) */
 
 .contenedor-clientes {
   position: relative;
@@ -726,7 +726,7 @@ input {
   overflow: hidden;
   border: none;
 
-  /*# Estilos específicos del carrousel */
+  /*/*Estilos específicos del carrousel */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -807,7 +807,7 @@ input {
   display: flex;
   width: calc(250px * 14);
 }
-/*# Se define el tamaño de las imágenes en la cinta transportadora */
+/*/*Se define el tamaño de las imágenes en la cinta transportadora */
 .slider .slide {
   width: 250px;
   height: 250px;
@@ -820,9 +820,9 @@ input {
   border-radius: 25%;
 }
 
-/*# End Clientes (Cinta transportadora) */
+/*/*End Clientes (Cinta transportadora) */
 
-/*# =============== VIDEO ===============*/
+/*/*=============== VIDEO ===============*/
 .video__container {
   padding-bottom: 1rem;
 }
@@ -851,7 +851,7 @@ input {
   font-size: 1.2rem;
 }
 
-/*# =============== PROYECTOS ===============*/
+/*/*=============== PROYECTOS ===============*/
 
 .place__container {
   /* grid-template-columns: repeat(2, max-content); */
@@ -887,7 +887,7 @@ input {
   padding: 0.75rem 1rem;
 }
 
-/*# =============== SUBSCRIBE ===============*/
+/*/*=============== SUBSCRIBE ===============*/
 .subscribe__bg {
   background-color: var(--first-color-second);
   padding: 2.5rem 0;
@@ -925,7 +925,7 @@ input {
   color: var(--text-color);
 }
 
-/*# Email Validation */
+/*/*Email Validation */
 
 .validaEmail {
   width: 100%;
@@ -971,7 +971,7 @@ input {
   z-index: 1000;
 }
 
-/*# =============== clientes (sponsors) =============*/
+/*/*=============== clientes (sponsors) =============*/
 /* .clientes__container {
   grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   justify-items: center;
@@ -988,14 +988,14 @@ input {
   transition: var(--img-transition);
 } */
 
-/*# =============== FOOTER ===============*/
+/*/*=============== FOOTER ===============*/
 
-/*# Separar el footer del copyright */
+/*/*Separar el footer del copyright */
 .footer__container {
   row-gap: 5rem;
 }
 
-/*# -------- Cuerpo del Footer ------ */
+/*/*-------- Cuerpo del Footer ------ */
 .footer__content {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   row-gap: 2rem;
@@ -1014,7 +1014,7 @@ input {
   margin-bottom: var(--mb-2);
 }
 
-/*# ------ ¡New! Social Media icons ------ */
+/*/*------ ¡New! Social Media icons ------ */
 
 .footer__social i {
   color: var(--text-color);
@@ -1048,7 +1048,7 @@ input {
   font-size: 20px;
   color: var(--color-whatsapp);
 }
-/*# ------ ¡end! Social Media icons ------ */
+/*/*------ ¡end! Social Media icons ------ */
 
 .footer__subtitle {
   margin-bottom: var(--mb-1);
@@ -1083,7 +1083,7 @@ input {
   color: var(--text-color-light);
 }
 
-/*# -------- Cuerpo del Copyright ------ */
+/*/*-------- Cuerpo del Copyright ------ */
 
 .footer__rights {
   display: flex;
@@ -1098,6 +1098,14 @@ input {
   color: var(--text-color-light);
 }
 
+.footer__copy a {
+  color: var(--text-color-light);
+  text-decoration: underline;
+}
+
+.footer__copy a:hover {
+  color: var(--text-color);
+}
 .footer__copy span {
   font-size: var(--minimal-font-size);
 }
@@ -1108,15 +1116,19 @@ input {
   justify-content: center;
 }
 
-.footer__terms-link:hover {
+.footer__terms-link a {
+  font-size: var(--small-font-size);
+}
+
+.footer__terms-link a:hover {
   color: var(--text-color);
 }
 
-/*# ========= SCROLL UP (Icono flecha subir) ==========*/
+/*/*========= SCROLL UP (Icono flecha subir) ==========*/
 .scrollup {
   position: fixed;
   right: 1rem;
-  /*# Temporal, solo para codificar bien el botón, luego se esconde y manipula con JS y la clase "show-scroll" */
+  /*/*Temporal, solo para codificar bien el botón, luego se esconde y manipula con JS y la clase "show-scroll" */
   /* bottom: 5rem; */
   bottom: -20%;
   background-color: var(--first-color);
@@ -1137,12 +1149,12 @@ input {
   font-size: 1.2rem;
 }
 
-/*# Show scroll */
+/*/*Show scroll */
 .show-scroll {
   bottom: 5rem;
 }
 
-/*# =============== SCROLL BAR ===============*/
+/*/*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
   width: 0.6rem;
   background-color: var(--scroll-bar-color);
@@ -1158,7 +1170,7 @@ input {
 
 /*#! =============== MEDIA QUERIES ===============*/
 
-/*# For small devices */
+/*/*For small devices */
 @media screen and (max-width: 340px) {
   .place__container {
     /* grid-template-columns: max-content; */
@@ -1184,7 +1196,7 @@ input {
   }
 }
 
-/*# For medium devices */
+/*/*For medium devices */
 @media screen and (min-width: 568px) {
   .video__container {
     display: grid;
@@ -1323,7 +1335,7 @@ input {
   }
 }
 
-/*# For large devices */
+/*/*For large devices */
 @media screen and (min-width: 1024px) {
   .container {
     margin-left: auto;
@@ -1394,7 +1406,7 @@ input {
     justify-items: center;
   }
 
-  /*# SWIPER. Aumento del tamaño de las imagenes para viewport tipo Desktop */
+  /*/*SWIPER. Aumento del tamaño de las imagenes para viewport tipo Desktop */
   .swiper-slide {
     background-position: center;
     background-size: cover;
@@ -1402,7 +1414,7 @@ input {
     height: 400px;
   }
 
-  /*# SWIPER. Se re-inserta el contenido o texto dentro de la Card con la imagen aumentada  */
+  /*/*SWIPER. Se re-inserta el contenido o texto dentro de la Card con la imagen aumentada  */
   .services__data {
     position: absolute;
     bottom: 10rem;
@@ -1416,7 +1428,7 @@ input {
   }
 }
 
-/*# For tall screens on mobiles y desktop*/
+/*/*For tall screens on mobiles y desktop*/
 @media screen and (min-height: 721px) {
   body {
     margin: 0;
@@ -1428,7 +1440,7 @@ input {
 }
 
 /** Hidden styles for video on mobiles*/
-/*# --------------------------------- */
+/*/*--------------------------------- */
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .div-desktop {
     display: none;
@@ -1493,7 +1505,7 @@ input {
 }
 
 /** Show styles for video on desktop */
-/*# -------------------------------- */
+/*/*-------------------------------- */
 
 @media screen and (min-width: 769px) and (max-width: 3000px) {
   .div-desktop {
