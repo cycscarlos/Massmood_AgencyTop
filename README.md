@@ -6,7 +6,7 @@
 
 <br>
 
-![Website banner!](img/readme6.png)
+![Website banner!](assets/img/readme6.png)
 
 <br>
 
@@ -25,7 +25,7 @@ Take a look at the website at the following link [Github Pages] (https://cycscar
 <ul>
 <li>Background images and video</li>
 <li>Change menu navigation background color on scroll</li>
-<li>Using of several CSS animation libraries for hover effects on: image, video, buttons, links, cards, sliders, icons, etc.</li>
+<li>Using of several CSS animation libraries for hover effects</li>
 <li>Using of several JavaScript libraries for smooth scrolling, animations, etc.</li>
 <li>Social media icons definitons</li>
 <li>Use of Flexbox & Grid technics</li>
